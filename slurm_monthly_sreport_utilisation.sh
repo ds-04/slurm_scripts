@@ -29,7 +29,7 @@ do
     #Get integer for next month (end date)
     mplus=$((m+1))
 
-    #Sort out padding/eading zero for sreport
+    #Sort out padding/leading zero for sreport
       if [ $m -lt 10 ]; then
       mdouble=`printf "%01d"$m`
       else
