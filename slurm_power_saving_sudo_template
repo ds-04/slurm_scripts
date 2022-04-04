@@ -1,0 +1,19 @@
+# Author D SIMPSON 2022
+
+# SLURM POWER SAVING
+# Rudimentary template for potential sudo commands listed in order of invocation - suspend, then resume
+
+# this is merely a reference/template
+
+#------------------------------------------------
+
+# SUSPEND
+# umount (over ssh/clustershell)
+# systemctl disable slurmd (over ssh/clustershell) < optional depends on how you want to treat nodes
+# shutdown init 0 (over ssh/clustershell)
+
+# RESUME
+# IPMI poweron
+# uptime (over ssh/clustershell)  < optional info step
+# mount (over ssh/clustershell)
+# systemctl start slurmd (over ssh/clustershell)  < optional depends on how you want to treat nodes
